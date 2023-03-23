@@ -16,4 +16,4 @@ Create an interface called "Drawable" with an abstract method "draw".
 Make the "Rectangle" and "Circle" classes also inherit from the "Drawable" interface and implement the "draw" method.
 
 ###Task 6
-Exercise 6: Call the "draw" method on the previously instantiated "Rectangle" and "Circle" objects.
+Call the "draw" method on the previously instantiated "Rectangle" and "Circle" objects.
