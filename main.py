@@ -19,26 +19,28 @@ class Circle(Shape):
 
     def area(self):
         return 3.14 * (self.radius ** 2)
+    
+rectangle = Rectangle(5,10)
+circle = Circle(5)
+
+print(f"Area of rectangle is: {rectangle.area()}")
+print(f"Area of circle is: {circle.area()}")
 
 class Drawable(ABC):
     @abstractmethod
     def draw(self):
         pass
 
-class Rectangle(Rectangle, Drawable):
+class Rectangle(Drawable):
     def draw(self):
-        print("Drawing rectangle...")
+        print("Drawing rectangle")
 
-class Circle(Circle, Drawable):
+class Circle(Drawable):
     def draw(self):
-        print("Drawing circle...")
+        print("Drawing circle")
 
-rectangle = Rectangle(5, 10)
-circle = Circle(7)
-
-print("Area of rectangle:", rectangle.area())
-print("Area of circle:", circle.area())
+rectangle = Rectangle()
+circle = Circle()
 
 rectangle.draw()
 circle.draw()
-
